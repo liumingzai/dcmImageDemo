@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+  <!-- <meta name="theme-color" content="#000000" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="HandheldFriendly" content="True" /> -->
+  <title>Cornerstone-demo</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="lib/jquery-ui.min.css" rel="stylesheet"> -->
+  <link href="css/demo.css" rel="stylesheet">  
+</head>
+<body>
+  <div class="main">
+    <div class="viewer">
+      <div class="viewerTool text-center">
+        <div class="btn-group">
+          <!-- Zoom 缩放 -->
+          <button type="button" class="btn btn-large btn-default magnify" data-container="body" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="放大镜"><span class="fa fa-search"></span></button>
+          <!-- Stack scroll 旋转-->
+          <button type="button" class="btn btn-large btn-default zoom" data-container="body" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="缩放"><span class="fa fa fa-arrows"></span></button>
+          <!-- Length measurement 长度测量-->
+          <button type="button" class="btn btn-large btn-default length" data-container="body" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="长度"><span class="fa fa-arrows-v"></span></button>
+          <!-- Angle measurement 角度测量 -->
+          <button type="button" class="btn btn-large btn-default angle" data-container="body" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="角度"><span class="fa fa-angle-left"></span></button>
+        </div>
+      </div>
+      <div class="imageViewer">
+        <!-- Viewport -->
+        <div id="dcmElement" class="viewport ui-droppable"></div>
+      </div>
+    </div>
+    <div class="itemContainer"> 
+      <ul class="itemList">
+        <li class="item">
+          <span class="itemLabel">就诊人</span>
+          <span class="itemContent">吴三桂</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">性别</span>
+          <span class="itemContent">男</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">手机号</span>
+          <span class="itemContent">151****7856</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">经诊医生</span>
+          <span class="itemContent">洪金宝</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">转出机构</span>
+          <span class="itemContent">精武门医院 呼吸科</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">转入机构</span>
+          <span class="itemContent">XXXX医院</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">初步诊断</span>
+          <span class="itemContent">无</span>
+        </li>
+        <li class="item">
+          <span class="itemLabel">具体描述</span>
+          <span class="itemContent">无</span>
+        </li>
+      </ul>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</body>
+
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/hammer.js"></script>
+<script src="vendor/cornerstone-core.min.js"></script>
+<script src="vendor/cornerstone-math.js"></script>
+<script src="vendor/cornerstone-tools.js"></script>
+<script src="vendor/cornerstoneWADOImageLoader.js"></script>
+<script src="vendor/cornerstone-web-image-loader.js"></script>
+<script src="vendor/dicomParser.min.js"></script>
+<script type="text/javascript" src='js/dicomDemo.js'></script>
+</html>
